@@ -63,9 +63,9 @@ class Team extends Model
         return $this->hasMany(Team::class);
     }
 
-    public function roles(): HasMany
+    public function roles(): BelongsTo
     {
-        return $this->hasMany(Role::class);
+        return $this->BelongsTo(Role::class);
     }
 
     public function members(): BelongsToMany
