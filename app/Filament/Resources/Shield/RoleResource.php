@@ -21,7 +21,7 @@ use Illuminate\Support\Str;
 class RoleResource extends Resource implements HasShieldPermissions
 {
     protected static ?string $recordTitleAttribute = 'name';
-
+   protected static ?string $tenantOwnershipRelationshipName = 'team';
     
     public static function getPermissionPrefixes(): array
     {
@@ -34,7 +34,7 @@ class RoleResource extends Resource implements HasShieldPermissions
             'delete_any',
         ];
     }
-   protected static ?string $tenantOwnershipRelationshipName = 'team';
+
     public static function form(Form $form): Form
     {
         return $form
