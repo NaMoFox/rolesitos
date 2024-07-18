@@ -73,7 +73,10 @@ return [
             'AccountWidget', 'FilamentInfoWidget',
         ],
 
-        'resources' => [],
+        'resources' => [
+    'teams' => [
+            'ownershipRelationship' => 'team',
+        ],
     ],
 
     'discovery' => [
