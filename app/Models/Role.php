@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Role extends SpatieRole
 {
-    public function team(): BelongsTo
+    public function team()
     {
         return $this->belongsTo(Team::class);
     } 
