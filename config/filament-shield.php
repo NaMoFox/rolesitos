@@ -73,9 +73,9 @@ return [
             'AccountWidget', 'FilamentInfoWidget',
         ],
 
-        'resources' => [
-    'teams' => [
-            'ownershipRelationship' => 'team',
+       'resources' => [
+        'teams' => [
+            'ownershipRelationship' => 'team', // Cambia esto si tu relación tiene otro nombre
         ],
     ],
 
